@@ -30,7 +30,28 @@ Validar o CPF e o cadastro do e-mail é muito importante para garantir a veracid
 
 ### Método
 
-### Explanação de codigos
+  - O Projeto de Validação de CPF utiliza HTML, JavaScript e CSS para criar páginas totalmente funcionais e elegantes. O HTML define um formulário com campo de entrada de CPF e botão de envio. JavaScript verifica o CPF removendo caracteres não numéricos e calculando dígitos de verificação, e exibe uma mensagem de verificação apropriada. O CSS molda a página centralizando formulários, aplicando imagens de fundo e ajustando a aparência dos elementos para garantir uma experiência de usuário atraente e intuitiva. Juntos, esses componentes criam uma ferramenta eficaz para verificar a validade de um número de CPF.
+
+### Explanação de codigos 
+<br>
+/HTML/ <br>
+  - O <! DOCTYPE html> define o documento como HTML5. Dentro da estrutura HTML, o < head> inclui informações como o título da página e links para o estilo visual (CSS). O < body> contém um formulário para inserir e validar o CPF, com um campo de texto, um botão de submissão e um parágrafo para exibir mensagens de validação. O JavaScript, incluído no final, faz a validação do CPF inserido e atualiza a mensagem com base na validade do número.
+<br>
+/JAVASCRIPT/<br>
+  - Quando o formulário é enviado, o padrão de recarregar a página é impedido. O código então pega o CPF digitado e usa uma função para checar se ele é válido. A mensagem na página é atualizada de acordo com o resultado da validação.
+  A função de validação remove caracteres extras do CPF e verifica se ele tem 11 dígitos e se não é feito só de números repetidos. Em seguida, calcula dois números de verificação com base nos dígitos do CPF e compara com os números de verificação fornecidos. Se tudo estiver certo, a função retorna true; se não, retorna false.
+/CSS/<br>
+  - Estilo para o Corpo da Página: Define a fonte, imagem de fundo, e o layout usando Flexbox para centralizar o conteúdo vertical e horizontalmente.
+  Define a altura da viewport para ocupar toda a altura da tela e remove a margem.
+  Estiliza o Contêiner Principal (div):
+
+  Define a cor de fundo, padding, borda arredondada, sombra e largura do contêiner.
+
+
+
+
+
+
 
 ## Validação do Email
 
@@ -69,14 +90,12 @@ Estilo do Formulário (form):
 Estilo Visual: Define o fundo branco, padding, bordas arredondadas e uma sombra leve para criar um visual moderno e destacado.
 Estilo das Etiquetas (label):
 Estilo do Texto: Exibe as etiquetas como blocos com margens inferiores e fonte em negrito para destaque.
-Estilo do Campo de Entrada (input[type="text"]):
+Estilo do Campo de Entrada (input[ type="text"]):
 Largura e Padding: Ajusta a largura, o padding e o estilo da borda para tornar o campo de entrada mais utilizável e esteticamente agradável.
-Estilo do Botão (input[type="submit"]):
+Estilo do Botão (input[ type="submit"]):
 Aparência do Botão: Define padding, tamanho da fonte, cor de fundo, e estilo de borda para o botão, além de um cursor pointer para indicar que é clicável.
 Estilo da Mensagem (#email):
 Estilo do Texto: Define a cor e o estilo da fonte para a mensagem que exibe o e-mail validado, garantindo que seja legível e visualmente agradável.
-Resumo: O HTML define a estrutura e os elementos da página, o JavaScript adiciona a funcionalidade de validação do e-mail, e o CSS estiliza a página para torná-la visualmente atraente e fácil de usar. Juntas, essas partes criam uma interface interativa que valida e-mails e fornece feedback ao usuário de forma eficiente e agradável.
-
 ---
 
 ## Tecnologias
