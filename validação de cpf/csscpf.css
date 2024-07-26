@@ -1,43 +1,62 @@
+/* Estilo para o corpo da página */
 body {
-    background-color: #000;
-    color: rgb(165, 165, 165);
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: Arial, sans-serif; /* Define a fonte para Arial e, caso não esteja disponível, uma fonte sans-serif genérica. */
+    background-image: url(img2/39879237_8779306.jpg); /* Define uma imagem de fundo para o corpo da página. */
+    display: flex; /* Usa o Flexbox para layout. */
+    justify-content: center; /* Alinha horizontalmente o conteúdo no centro. */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro. */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport. */
+    margin: 0; /* Remove a margem padrão do corpo da página. */
 }
 
+/* Estiliza o contêiner principal */
 div {
-
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 240px;
-    padding: 10px;
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branca. */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels em torno do conteúdo do contêiner. */
+    border-radius: 5px; /* Adiciona bordas arredondadas com um raio de 5 pixels. */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adiciona uma sombra leve ao contêiner. */
+    width: 300px; /* Define uma largura fixa de 300 pixels para o contêiner. */
 }
 
+/* Estilos para o formulário */
+form {
+    display: flex; /* Usa o Flexbox para layout dentro do formulário. */
+    flex-direction: column; /* Organiza os itens do formulário em uma coluna. */
+}
+
+/* Estilos para as etiquetas (labels) */
 label {
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 pixels abaixo das etiquetas. */
+    font-weight: bold; /* Define o peso da fonte como negrito para as etiquetas. */
 }
 
+/* Estilos para o input de tipo texto */
 input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    width: 200px;
+    padding: 8px; /* Adiciona um espaçamento interno de 8 pixels dentro dos campos de texto. */
+    font-size: 14px; /* Define o tamanho da fonte dentro dos campos de texto como 14 pixels. */
+    border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com a cor cinza claro (#ccc). */
+    border-radius: 3px; /* Adiciona bordas arredondadas com um raio de 3 pixels aos campos de texto. */
 }
 
+/* Estilos para o botão */
 button {
-    padding: 5px 86px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: rgb(29, 29, 29);
-    color: rgb(133, 133, 133);
-    border: none;
+    padding: 10px; /* Adiciona um espaçamento interno de 10 pixels dentro do botão. */
+    font-size: 16px; /* Define o tamanho da fonte no botão como 16 pixels. */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão. */
+    background-color: #cb08dd; /* Define a cor de fundo do botão como um tom de roxo (#cb08dd). */
+    color: #fff; /* Define a cor do texto no botão como branco. */
+    border: none; /* Remove qualquer borda padrão do botão. */
+    border-radius: 3px; /* Adiciona bordas arredondadas com um raio de 3 pixels ao botão. */
 }
 
+/* Estilos para o estado de hover do botão */
+button:hover {
+    background-color: #ea00ff; /* Altera a cor de fundo do botão para um tom mais brilhante de roxo (#ea00ff) quando o cursor passa sobre ele. */
+}
 
-
-
+/* Estilos para a mensagem de validação */
+#message {
+    margin-top: 10px; /* Adiciona um espaçamento superior de 10 pixels acima da mensagem de validação. */
+    font-style: italic; /* Define o estilo da fonte como itálico para a mensagem. */
+    color: rgb(0, 0, 0); /* Define a cor do texto da mensagem como preto. */
+}

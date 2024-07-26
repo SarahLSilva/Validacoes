@@ -1,0 +1,55 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para Arial e, caso não esteja disponível, uma fonte sans-serif genérica. */
+    background-image: url(img2/39879237_8779306.jpg); /* Define uma imagem de fundo para o corpo da página. */
+    display: flex; /* Usa o Flexbox para layout. */
+    justify-content: center; /* Alinha horizontalmente o conteúdo no centro. */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro. */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport (tela). */
+    margin: 0; /* Remove a margem padrão do corpo da página. */
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: #fff; /* Define a cor de fundo do formulário como branca. */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels ao redor do conteúdo do formulário. */
+    border-radius: 5px; /* Adiciona bordas arredondadas com um raio de 5 pixels ao formulário. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao formulário com uma opacidade de 10%. */
+    width: 300px; /* Define uma largura fixa de 300 pixels para o formulário. */
+    text-align: center; /* Centraliza o texto dentro do formulário. */
+}
+
+/* Estilo para as etiquetas (labels) */
+label {
+    display: block; /* Faz com que cada etiqueta ocupe uma linha completa, empurrando os elementos seguintes para baixo. */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 pixels abaixo das etiquetas. */
+    font-weight: bold; /* Define o peso da fonte como negrito para as etiquetas. */
+}
+
+/* Estilo para o input de tipo texto */
+input[type="text"] {
+    width: calc(100% - 10px); /* Define a largura do campo de texto para ocupar 100% da largura disponível menos 10 pixels (para compensar o padding). */
+    padding: 8px; /* Adiciona um espaçamento interno de 8 pixels dentro do campo de texto. */
+    font-size: 14px; /* Define o tamanho da fonte dentro do campo de texto como 14 pixels. */
+    border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com a cor cinza claro (#ccc). */
+    border-radius: 3px; /* Adiciona bordas arredondadas com um raio de 3 pixels ao campo de texto. */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 pixels abaixo do campo de texto. */
+}
+
+/* Estilo para o input de tipo submit (botão de envio) */
+input[type="submit"] {
+    padding: 10px 20px; /* Adiciona um espaçamento interno de 10 pixels verticalmente e 20 pixels horizontalmente dentro do botão. */
+    font-size: 16px; /* Define o tamanho da fonte no botão como 16 pixels. */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão. */
+    background-color: #cb08dd; /* Define a cor de fundo do botão como um tom de roxo (#cb08dd). */
+    color: #fff; /* Define a cor do texto no botão como branco. */
+    border: none; /* Remove qualquer borda padrão do botão. */
+    border-radius: 3px; /* Adiciona bordas arredondadas com um raio de 3 pixels ao botão. */
+}
+
+/* Estilo para a mensagem de e-mail */
+#email {
+    margin-top: 10px; /* Adiciona um espaçamento superior de 10 pixels acima da mensagem de e-mail. */
+    font-style: italic; /* Define o estilo da fonte como itálico para a mensagem. */
+    color: #666; /* Define a cor do texto da mensagem como cinza escuro (#666). */
+}
